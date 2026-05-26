@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Grigorii Budoragin — Senior Data Scientist at Intercom, London. Former Yandex and BigTechCo™.">
+  <meta name="description" content="Grigorii Budoragin — Senior Data Scientist. 8 years at Yandex, BigTechCo™, and Intercom. London, UK.">
   <meta name="author" content="Grigorii Budoragin">
   <meta property="og:title" content="Grigorii Budoragin — Data Scientist">
-  <meta property="og:description" content="Senior Data Scientist at Intercom. Specialising in AI product analytics, data modelling, and large-scale ETL pipelines.">
+  <meta property="og:description" content="Data Scientist with 8 years of experience at large product companies. SQL, Python, A/B testing, Data Engineering.">
   <meta property="og:type" content="profile">
   <title>Grigorii Budoragin</title>
   <style>
@@ -23,7 +23,7 @@
     a:hover { text-decoration: underline; }
 
     .container {
-      max-width: 760px;
+      max-width: 780px;
       margin: 0 auto;
       padding: 48px 24px 96px;
     }
@@ -33,12 +33,12 @@
       display: flex;
       gap: 32px;
       align-items: flex-start;
-      margin-bottom: 48px;
+      margin-bottom: 40px;
     }
 
     .header img {
-      width: 120px;
-      height: 120px;
+      width: 110px;
+      height: 110px;
       border-radius: 50%;
       object-fit: cover;
       object-position: center top;
@@ -47,56 +47,52 @@
     }
 
     .header-text h1 {
-      font-size: 2rem;
+      font-size: 1.9rem;
       font-weight: 700;
       letter-spacing: -0.5px;
       margin-bottom: 4px;
     }
 
     .header-text .tagline {
-      font-size: 1.05rem;
+      font-size: 1rem;
       color: #555;
       margin-bottom: 12px;
     }
 
-    .header-text .meta {
-      font-size: 0.9rem;
-      color: #777;
+    .contact-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 10px 20px;
+      font-size: 0.88rem;
+      color: #555;
     }
 
-    .header-text .meta span::before {
-      margin-right: 4px;
-    }
+    .contact-links a { color: #444; }
 
     /* Sections */
-    section {
-      margin-bottom: 40px;
-    }
+    section { margin-bottom: 36px; }
 
     section h2 {
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 1.2px;
+      letter-spacing: 1.4px;
       color: #999;
       border-bottom: 1px solid #e8e8e8;
-      padding-bottom: 8px;
-      margin-bottom: 20px;
+      padding-bottom: 7px;
+      margin-bottom: 18px;
     }
 
     /* Summary */
-    .summary p {
-      font-size: 1rem;
-      color: #333;
-    }
+    .summary p { font-size: 0.97rem; color: #333; }
+
+    /* Skills */
+    .skills-list { list-style: none; font-size: 0.92rem; }
+    .skills-list li { margin-bottom: 5px; }
+    .skills-list strong { color: #222; }
 
     /* Experience */
-    .job {
-      margin-bottom: 28px;
-    }
+    .job { margin-bottom: 28px; }
 
     .job-header {
       display: flex;
@@ -104,54 +100,20 @@
       align-items: baseline;
       flex-wrap: wrap;
       gap: 4px;
-      margin-bottom: 2px;
+      margin-bottom: 1px;
     }
 
-    .job-header h3 {
-      font-size: 1rem;
-      font-weight: 600;
-    }
+    .job-header h3 { font-size: 0.97rem; font-weight: 600; }
+    .job-header .period { font-size: 0.84rem; color: #888; white-space: nowrap; }
+    .job .company { font-size: 0.88rem; color: #666; margin-bottom: 8px; font-style: italic; }
 
-    .job-header .period {
-      font-size: 0.85rem;
-      color: #888;
-      white-space: nowrap;
-    }
-
-    .job .company {
-      font-size: 0.9rem;
-      color: #555;
-      margin-bottom: 6px;
-    }
-
-    .job p {
-      font-size: 0.92rem;
+    .job ul {
+      padding-left: 1.2em;
+      font-size: 0.88rem;
       color: #444;
     }
 
-    /* Skills */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 16px;
-    }
-
-    .skill-group h4 {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: #333;
-      margin-bottom: 6px;
-    }
-
-    .skill-group ul {
-      list-style: none;
-      font-size: 0.88rem;
-      color: #555;
-    }
-
-    .skill-group ul li {
-      padding: 1px 0;
-    }
+    .job ul li { margin-bottom: 4px; }
 
     /* Education */
     .edu-header {
@@ -162,40 +124,14 @@
       gap: 4px;
     }
 
-    .edu-header h3 {
-      font-size: 1rem;
-      font-weight: 600;
-    }
-
-    .edu-header .period {
-      font-size: 0.85rem;
-      color: #888;
-    }
-
-    .edu-school {
-      font-size: 0.9rem;
-      color: #555;
-      margin-top: 2px;
-    }
-
-    /* Contact */
-    .contact-list {
-      list-style: none;
-      font-size: 0.92rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-    .contact-list li {
-      color: #444;
-    }
+    .edu-header h3 { font-size: 0.97rem; font-weight: 600; }
+    .edu-header .period { font-size: 0.84rem; color: #888; }
+    .edu-school { font-size: 0.88rem; color: #666; margin-top: 2px; font-style: italic; }
 
     @media (max-width: 520px) {
       .header { flex-direction: column; align-items: center; text-align: center; }
-      .header-text .meta { justify-content: center; }
-      .job-header { flex-direction: column; }
-      .edu-header { flex-direction: column; }
+      .contact-links { justify-content: center; }
+      .job-header, .edu-header { flex-direction: column; }
     }
   </style>
 </head>
@@ -203,131 +139,107 @@
 
 <div class="container">
 
-  <!-- Header -->
   <header class="header">
-    <img src="photo.jpg" alt="Grigorii Budoragin">
+    <img src="photo.png" alt="Grigorii Budoragin">
     <div class="header-text">
       <h1>Grigorii Budoragin</h1>
-      <p class="tagline">Senior Data Scientist</p>
-      <div class="meta">
-        <span>📍 London, UK</span>
-        <span>🏢 Intercom</span>
-        <span>✉️ <a href="mailto:grigorii.budoragin@intercom.io">grigorii.budoragin@intercom.io</a></span>
+      <p class="tagline">Senior Data Scientist · London, UK</p>
+      <div class="contact-links">
+        <a href="mailto:bdrgn@yandex.ru">bdrgn@yandex.ru</a>
+        <a href="https://wa.me/+447918454984">+44 7918 454984</a>
+        <a href="https://t.me/bdrgn" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://github.com/bdrgn" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/bdrgn" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
   </header>
 
-  <!-- Summary -->
   <section class="summary">
-    <h2>About</h2>
-    <p>
-      Data Scientist with 7+ years of experience building large-scale data pipelines and analytics products.
-      Currently working on AI product analytics for Fin at Intercom, focused on automation rate, resolution
-      rate, and customer outcome metrics. Previously at Yandex and BigTechCo™. Interested in the intersection
-      of data engineering rigour and statistical thinking.
-    </p>
+    <h2>Summary</h2>
+    <p>Data Scientist with 8 years of experience at large product companies. Deep practical knowledge of SQL,
+    Python, A/B testing, Data Visualization, and Data Engineering. Increased revenue by +10%, DAU by +10%
+    and built data pipelines used to set KPIs and evaluate A/B experiments.</p>
   </section>
 
-  <!-- Experience -->
-  <section>
-    <h2>Experience</h2>
-
-    <div class="job">
-      <div class="job-header">
-        <h3>Senior Data Scientist — RAD Team</h3>
-        <span class="period">2026 – present</span>
-      </div>
-      <p class="company">Intercom · London, UK</p>
-      <p>
-        Building data models and metrics frameworks for Fin, Intercom's flagship AI agent product.
-        Work spans dbt modelling, Snowflake, Airflow DAGs, and Streamlit dashboards.
-        Focus areas include automation rate, resolution rate, and outbound sales analytics.
-      </p>
-    </div>
-
-    <div class="job">
-      <div class="job-header">
-        <h3>Data Scientist</h3>
-        <span class="period">2024 – 2025</span>
-      </div>
-      <p class="company">BigTechCo™ · London, UK</p>
-      <p>
-        Product analytics for growth initiatives at scale. Built and maintained large-scale
-        data pipelines using internal orchestration tooling and Presto. Worked on user
-        behaviour modelling and experimentation frameworks.
-      </p>
-    </div>
-
-    <div class="job">
-      <div class="job-header">
-        <h3>Senior Data Scientist</h3>
-        <span class="period">2019 – 2023</span>
-      </div>
-      <p class="company">Yandex · Moscow, Russia</p>
-      <p>
-        4 years building ETL pipelines and analytics products using YQL and YT (Yandex's
-        MapReduce system). Worked on search ranking signal analysis, processing hundreds of
-        billions of events. Built query-sharing and result-persistence tooling for internal analysts.
-      </p>
-    </div>
-  </section>
-
-  <!-- Skills -->
   <section>
     <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-group">
-        <h4>Data Engineering</h4>
-        <ul>
-          <li>SQL · Snowflake · ClickHouse</li>
-          <li>dbt · Airflow · Spark</li>
-          <li>ETL pipeline design</li>
-        </ul>
+    <ul class="skills-list">
+      <li><strong>Databases &amp; ETL:</strong> SQL (ClickHouse, MySQL), NoSQL (DynamoDB), Nirvana (internal Airflow alternative)</li>
+      <li><strong>Programming:</strong> Python (pandas, NumPy, Matplotlib), AWS Lambda, Unix, BitBucket, CI/CD</li>
+      <li><strong>Data Visualization:</strong> Tableau, Yandex DataLens, Matplotlib, AppMetrica</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Work Experience</h2>
+
+    <div class="job">
+      <div class="job-header">
+        <h3>Senior Data Scientist, Ads Experimentation</h3>
+        <span class="period">2024 – present</span>
       </div>
-      <div class="skill-group">
-        <h4>Analytics & ML</h4>
-        <ul>
-          <li>Python · pandas · scikit-learn</li>
-          <li>A/B testing · causal inference</li>
-          <li>NLP · LLM evaluation</li>
-        </ul>
+      <p class="company">BigTechCo™ · $160B revenue/year · London</p>
+      <ul>
+        <li>Blocked VP-level datacenter capacity spend by proving low ROI via simulation model, saving <strong>+$60M/year</strong>.</li>
+        <li>Identified A/B configs bypassing main API, raising treatment detection 46%→80%, saving <strong>+5% platform throughput</strong>.</li>
+        <li>Enabled accurate incremental revenue attribution by proving <strong>A/B-platform correctness at Photogram/SM directors level</strong>.</li>
+        <li>Uncovered customer pain-points via data-driven interviews, resulting in a new feature saving <strong>+50 engineering years</strong>.</li>
+        <li>Exposed inefficiency in datacenter capacity utilization, suggested a fix increasing <strong>A/B-platform throughput by +1%</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <h3>Senior Data Scientist, Product Analytics</h3>
+        <span class="period">2020 – 2024</span>
       </div>
-      <div class="skill-group">
-        <h4>Visualisation</h4>
-        <ul>
-          <li>Streamlit · Plotly</li>
-          <li>Snowflake Notebooks</li>
-          <li>Jupyter</li>
-        </ul>
+      <p class="company">Yandex · Moscow</p>
+      <ul>
+        <li>Solved conversion issues through deep root-cause analysis of 1TB/day clickstream data yielding <strong>+5.4% revenue</strong>.</li>
+        <li>Introduced gamification — calculated unit economics, came up with tech specs and initial design adding <strong>+10% DAU</strong>.</li>
+        <li>Further improved conversion rates through data-driven insights leading to product changes yielding <strong>+4.6% revenue</strong>.</li>
+        <li>Pioneered use of cloud serverless tooling <strong>speeding up report generation by 10×, adopted across 3 teams</strong>.</li>
+        <li>Demonstrated non-linear relationship between app time-spent and revenue, <strong>enabling +10% ARPU growth</strong>.</li>
+        <li>Built a matching pipeline with precise revenue stats for <strong>evaluating experiments and setting KPIs for 130 people</strong>.</li>
+        <li>Motivated 4 dev teams to introduce a new ID to attribute revenue to specific app events, <strong>enabling A/B experiments for revenue</strong>.</li>
+        <li>Taught 5 data scientists to use ClickHouse for fast computation, resulting in <strong>adoption across 3 teams (15 people)</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <h3>Data Scientist, Business Intelligence</h3>
+        <span class="period">2019 – 2020</span>
       </div>
-      <div class="skill-group">
-        <h4>Languages</h4>
-        <ul>
-          <li>Russian — native</li>
-          <li>English — fluent</li>
-        </ul>
+      <p class="company">Rutube · Moscow</p>
+      <ul>
+        <li>Created a Data Quality alerting system in Python+SQL for <strong>real-time error detection across 30+ sources</strong>.</li>
+        <li>Developed fault-tolerant data visualization pipelines sending <strong>automated daily PDF reports directly to shareholders</strong>.</li>
+        <li>Mentored 2 interns, providing guidance to facilitate skill acquisition and integration into the team.</li>
+        <li>Set up 50+ Tableau dashboards and 20+ ETL pipelines making trillions of rows of data suitable for quick decision-making.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <h3>Junior Data Scientist, Risk Management</h3>
+        <span class="period">2018 – 2019</span>
       </div>
+      <p class="company">OTP Bank · Moscow</p>
+      <ul>
+        <li>Improved loan rejection rules using richer data and fine-tuning, implemented in production <strong>saving est. +$100K/year</strong>.</li>
+        <li>Built NLP model to detect fraud using text data to <strong>automatically issue warnings to fraudulent partners</strong>.</li>
+      </ul>
     </div>
   </section>
 
-  <!-- Education -->
   <section>
     <h2>Education</h2>
     <div class="edu-header">
-      <h3>MSc Applied Mathematics and Computer Science</h3>
-      <span class="period">2014 – 2019</span>
+      <h3>BSc Economics</h3>
+      <span class="period">2013 – 2017</span>
     </div>
-    <p class="edu-school">Moscow State University</p>
-  </section>
-
-  <!-- Contact -->
-  <section>
-    <h2>Contact</h2>
-    <ul class="contact-list">
-      <li>✉️ <a href="mailto:grigorii.budoragin@intercom.io">grigorii.budoragin@intercom.io</a></li>
-      <li>🐙 <a href="https://github.com/grigorii-budoragin" target="_blank" rel="noopener">github.com/grigorii-budoragin</a></li>
-      <li>📍 London, UK</li>
-    </ul>
+    <p class="edu-school">Higher School of Economics · Moscow, Russia</p>
   </section>
 
 </div>
