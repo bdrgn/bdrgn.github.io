@@ -2,23 +2,349 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Grigorii Budoragin — Senior Data Scientist at Intercom, London. Former Yandex and BigTechCo™.">
+  <meta name="author" content="Grigorii Budoragin">
+  <meta property="og:title" content="Grigorii Budoragin — Data Scientist">
+  <meta property="og:description" content="Senior Data Scientist at Intercom. Specialising in AI product analytics, data modelling, and large-scale ETL pipelines.">
+  <meta property="og:type" content="profile">
+  <title>Grigorii Budoragin</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f9f9f9;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+      margin-bottom: 48px;
+    }
+
+    .header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      flex-shrink: 0;
+      border: 3px solid #e0e0e0;
+    }
+
+    .header-text h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 4px;
+    }
+
+    .header-text .tagline {
+      font-size: 1.05rem;
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    .header-text .meta {
+      font-size: 0.9rem;
+      color: #777;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .header-text .meta span::before {
+      margin-right: 4px;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: #999;
+      border-bottom: 1px solid #e8e8e8;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+
+    /* Summary */
+    .summary p {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    /* Experience */
+    .job {
+      margin-bottom: 28px;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 2px;
+    }
+
+    .job-header h3 {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .job-header .period {
+      font-size: 0.85rem;
+      color: #888;
+      white-space: nowrap;
+    }
+
+    .job .company {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 6px;
+    }
+
+    .job p {
+      font-size: 0.92rem;
+      color: #444;
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .skill-group h4 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 6px;
+    }
+
+    .skill-group ul {
+      list-style: none;
+      font-size: 0.88rem;
+      color: #555;
+    }
+
+    .skill-group ul li {
+      padding: 1px 0;
+    }
+
+    /* Education */
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .edu-header h3 {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .edu-header .period {
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    .edu-school {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 2px;
+    }
+
+    /* Contact */
+    .contact-list {
+      list-style: none;
+      font-size: 0.92rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .contact-list li {
+      color: #444;
+    }
+
+    @media (max-width: 520px) {
+      .header { flex-direction: column; align-items: center; text-align: center; }
+      .header-text .meta { justify-content: center; }
+      .job-header { flex-direction: column; }
+      .edu-header { flex-direction: column; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to my GitHub Pages site</h1>
-  <p>Your content goes here.</p>
 
-  <script>
-    const APP_ID = "peh353ji" 
+<div class="container">
 
-    window.intercomSettings = {
-      api_base: "https://api-iam.intercom.io",
-      app_id: APP_ID,
-    };
-  </script>
+  <!-- Header -->
+  <header class="header">
+    <img src="photo.jpg" alt="Grigorii Budoragin">
+    <div class="header-text">
+      <h1>Grigorii Budoragin</h1>
+      <p class="tagline">Senior Data Scientist</p>
+      <div class="meta">
+        <span>📍 London, UK</span>
+        <span>🏢 Intercom</span>
+        <span>✉️ <a href="mailto:grigorii.budoragin@intercom.io">grigorii.budoragin@intercom.io</a></span>
+      </div>
+    </div>
+  </header>
 
-  <script>
-    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/' + APP_ID;var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-  </script>
+  <!-- Summary -->
+  <section class="summary">
+    <h2>About</h2>
+    <p>
+      Data Scientist with 7+ years of experience building large-scale data pipelines and analytics products.
+      Currently working on AI product analytics for Fin at Intercom, focused on automation rate, resolution
+      rate, and customer outcome metrics. Previously at Yandex and BigTechCo™. Interested in the intersection
+      of data engineering rigour and statistical thinking.
+    </p>
+  </section>
+
+  <!-- Experience -->
+  <section>
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="job-header">
+        <h3>Senior Data Scientist — RAD Team</h3>
+        <span class="period">2026 – present</span>
+      </div>
+      <p class="company">Intercom · London, UK</p>
+      <p>
+        Building data models and metrics frameworks for Fin, Intercom's flagship AI agent product.
+        Work spans dbt modelling, Snowflake, Airflow DAGs, and Streamlit dashboards.
+        Focus areas include automation rate, resolution rate, and outbound sales analytics.
+      </p>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <h3>Data Scientist</h3>
+        <span class="period">2024 – 2025</span>
+      </div>
+      <p class="company">BigTechCo™ · London, UK</p>
+      <p>
+        Product analytics for growth initiatives at scale. Built and maintained large-scale
+        data pipelines using internal orchestration tooling and Presto. Worked on user
+        behaviour modelling and experimentation frameworks.
+      </p>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <h3>Senior Data Scientist</h3>
+        <span class="period">2019 – 2023</span>
+      </div>
+      <p class="company">Yandex · Moscow, Russia</p>
+      <p>
+        4 years building ETL pipelines and analytics products using YQL and YT (Yandex's
+        MapReduce system). Worked on search ranking signal analysis, processing hundreds of
+        billions of events. Built query-sharing and result-persistence tooling for internal analysts.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h4>Data Engineering</h4>
+        <ul>
+          <li>SQL · Snowflake · ClickHouse</li>
+          <li>dbt · Airflow · Spark</li>
+          <li>ETL pipeline design</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Analytics & ML</h4>
+        <ul>
+          <li>Python · pandas · scikit-learn</li>
+          <li>A/B testing · causal inference</li>
+          <li>NLP · LLM evaluation</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Visualisation</h4>
+        <ul>
+          <li>Streamlit · Plotly</li>
+          <li>Snowflake Notebooks</li>
+          <li>Jupyter</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Languages</h4>
+        <ul>
+          <li>Russian — native</li>
+          <li>English — fluent</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section>
+    <h2>Education</h2>
+    <div class="edu-header">
+      <h3>MSc Applied Mathematics and Computer Science</h3>
+      <span class="period">2014 – 2019</span>
+    </div>
+    <p class="edu-school">Moscow State University</p>
+  </section>
+
+  <!-- Contact -->
+  <section>
+    <h2>Contact</h2>
+    <ul class="contact-list">
+      <li>✉️ <a href="mailto:grigorii.budoragin@intercom.io">grigorii.budoragin@intercom.io</a></li>
+      <li>🐙 <a href="https://github.com/grigorii-budoragin" target="_blank" rel="noopener">github.com/grigorii-budoragin</a></li>
+      <li>📍 London, UK</li>
+    </ul>
+  </section>
+
+</div>
+
+<!-- Intercom -->
+<script>
+  const APP_ID = "peh353ji"
+
+  window.intercomSettings = {
+    api_base: "https://api-iam.intercom.io",
+    app_id: APP_ID,
+  };
+</script>
+
+<script>
+  (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/' + APP_ID;var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
+
 </body>
 </html>
